@@ -14,9 +14,10 @@ import Shimmer from "./components/Shimmer";
 import userContext from "./utils/userContext";
 import { Provider } from "react-redux";
 import store from "./utils/store";
+const About = lazy(() => import("./components/About"));
 import Cart from "./components/Cart";
 const Instamart = lazy(() => import("./components/Instamart"));
-const About = lazy(() => import("./components/about"));
+
 
 const AppLayout = () => {
    const [user, setUser] = useState({
